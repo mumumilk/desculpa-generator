@@ -27,16 +27,35 @@ img {
     box-sizing: border-box;
 }
 
+button {
+    text-decoration: none;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
 
 /** main */
 
 .main-bg {
     height: 100vh;
     width: 100%;
-    background: whitesmoke;
+    background-image: url('assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.main-overlay {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
 }
 
 .main {
@@ -44,15 +63,47 @@ img {
     max-width: 960px;
     height: 100%;
     display: flex;
+    z-index: 99;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.main textarea {
-    width: 50%;
-    height: 50px;
+.main *{
+    margin: 20px 0;
 }
 
-.main button {
-    height: 50px;
+.main div {
+    display: flex;
+    flex-direction: row;
 }
+
+.main #excuse-text {
+    min-width: 70%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    font-size: 1.7em;
+}
+
+.btn {
+    font-size: 1em;
+    box-shadow: 0px 12px 33px -7px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 12px 33px -7px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 12px 33px -7px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+    transition: background-color 0.5s ease;
+    padding: 2% 4%;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn:active {
+    background-color:#afafaf;
+    box-shadow: 0px 12px 33px -20px rgba(0,0,0,0.25);
+}
+
+

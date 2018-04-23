@@ -1,14 +1,14 @@
 var excuseArray = { 
     "excuses" : [
-        "desculpa1",
-        "desculpa2",
-        "desculpa3",
-        "desculpa4",
-        "desculpa5",
-        "desculpa6",
-        "desculpa7",
-        "desculpa8",
-        "desculpa9",
-        "desculpa0",
+        "Meu cachorro ficou doente",
+        "Esqueci que tinha que limpar a casa hj",
+        "Marquei de almoçar com meu irmão hoje",
+        "Vish to muito sem grana",
+        "Tá muito tarde pra ir...",
+        "Tenho um aniversário pra ir",
+        "Hoje tá bem corrido pra mim",
+        "Tô meio longe daí",
+        "Hoje preciso estudar",
+        "Vou ficar tranquilo pq ontem eu passei da conta"
     ]
 }
